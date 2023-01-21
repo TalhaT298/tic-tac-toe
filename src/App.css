@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  background-color: #043c75b4;
+  background-image: linear-gradient(90deg, #001c38 0%, 110%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  height: 70px;
+  width: 60px;
+  margin-left: 16px;
+  margin-right: 40px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.game {
+  border-radius:1em;
+  border:5px solid transparent;
+  width: fit-content;
+  min-width: 50%;
+  box-shadow: 5px 5px 15px 10px rgb(38, 34, 34);
+  margin: auto;
+
+
+  background-color: #f9f9f9;
+  background-image: linear-gradient(62deg, #fcfcfc 0%, #f7f7f7 100%);
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.players {
+  width: 100%;
+  height: 15%;
+  font-size: 30px;
+  float: right;
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.App-link {
-  color: #61dafb;
+.winner1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box{
+  white-space: nowrap;
+  margin-right: 20px;
 }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f0f1f4 50%,
+    #fcfcfc 105%
+  );
+}
+
+footer div {
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1.1em;
+}
+
+footer a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(93, 1, 1);
+}
+
+footer a:active {
+  color: rgb(250, 250, 250);
+}
+
+.player-status {
+  white-space: nowrap;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  float: left;
+  margin-top: 20%;
+  font-size: 1.6em;
+}
+
